@@ -28,7 +28,6 @@
 		E260002412580C8A008B2A9B /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = E260002312580C8A008B2A9B /* Earthquake.m */; };
 		E26000EB12582321008B2A9B /* EarthquakesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */; };
 		E29E488F12EC45E6003F72C9 /* 77-ekg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E29E488D12EC45E6003F72C9 /* 77-ekg@2x.png */; };
-		E29E489012EC45E6003F72C9 /* 103-map@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E29E488E12EC45E6003F72C9 /* 103-map@2x.png */; };
 		E2C8F3F619B825B900560F8E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C8F3F519B825B900560F8E /* icon.png */; };
 		E2CE10311260386B0055C508 /* EarthquakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE10301260386B0055C508 /* EarthquakeDetailViewController.m */; };
 		E2E32EF715930FF10046BABA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E32EF615930FF10046BABA /* icon@2x.png */; };
@@ -247,7 +246,7 @@
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				TargetAttributes = {
 					1D6058900D05DD3D006BFB54 = {
 						DevelopmentTeam = J4W9GLE26U;
@@ -283,7 +282,6 @@
 				E21C834B1258972000B87D78 /* 103-map@2x.png in Resources */,
 				E21C837E12589DA600B87D78 /* MapViewController.xib in Resources */,
 				E29E488F12EC45E6003F72C9 /* 77-ekg@2x.png in Resources */,
-				E29E489012EC45E6003F72C9 /* 103-map@2x.png in Resources */,
 				E2C8F3F619B825B900560F8E /* icon.png in Resources */,
 				E21E861513C7F8BF001A8A40 /* 73-radar.png in Resources */,
 				E21E861613C7F8BF001A8A40 /* 73-radar@2x.png in Resources */,
