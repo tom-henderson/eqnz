@@ -208,15 +208,15 @@ didStartElement:(NSString *)elementName
 		if ([conversionInfo month] == 0) {
 			if ([conversionInfo day] == 0) {
 				if ([conversionInfo hour] == 0) {
-					[currentQuake setDaysAgo:[NSString stringWithFormat:@"%d minutes ago", [conversionInfo minute]]];
+					[currentQuake setDaysAgo:[NSString stringWithFormat:@"%ld minutes ago", [conversionInfo minute]]];
 				} else {
-					[currentQuake setDaysAgo:[NSString stringWithFormat:@"%d hours ago", [conversionInfo hour]]];
+					[currentQuake setDaysAgo:[NSString stringWithFormat:@"%ld hours ago", [conversionInfo hour]]];
 				}
 			} else {
-				[currentQuake setDaysAgo:[NSString stringWithFormat:@"%d days ago", [conversionInfo day]]];
+				[currentQuake setDaysAgo:[NSString stringWithFormat:@"%ld days ago", [conversionInfo day]]];
 			}
 		} else {
-			[currentQuake setDaysAgo:[NSString stringWithFormat:@"%d months ago", [conversionInfo month]]];
+			[currentQuake setDaysAgo:[NSString stringWithFormat:@"%ld months ago", [conversionInfo month]]];
 		}
 
 		
@@ -306,7 +306,7 @@ didStartElement:(NSString *)elementName
 	
 	NSMutableArray *thisSection = [earthquakes objectAtIndex:section];
 	Earthquake *thisQuake = [thisSection lastObject];
-	return [NSString stringWithFormat:@"%@ (%d)", [thisQuake date], [thisSection count]];
+	return [NSString stringWithFormat:@"%@ (%lu)", [thisQuake date], [thisSection count]];
 }
 
 // Customize the appearance of table view cells.
