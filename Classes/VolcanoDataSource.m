@@ -56,7 +56,7 @@ static VolcanoDataSource *sharedVolcanoData;
 
 - (void)loadVolcanoData
 {
-    NSURL *url = [NSURL URLWithString:@"http://www.geonet.org.nz/rss/volcanic-alert.rss"];
+    NSURL *url = [NSURL URLWithString:@"http://www.geonet.org.nz/volcano/services/volcanic-alert.rss"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url 
                                              cachePolicy:NSURLRequestReloadIgnoringCacheData 
                                          timeoutInterval:30];
@@ -128,6 +128,7 @@ didStartElement:(NSString *)elementName
     
     if ([elementPath isEqual:@"rss/channel/item"]) {
         currentVolcano = [[Volcano alloc] init];
+        // NSLog(@"New volcano found");
     }
 }
 
@@ -166,10 +167,10 @@ didStartElement:(NSString *)elementName
         
         [currentVolcano setTitle:trimmedString];
         
-    } else if ([elementPath isEqualToString:@"rss/channel/item/geo:Point/geo:lat"]) {
+    } else if ([elementPath isEqualToString:@"rss/channel/item/geo:lat"]) {
         [currentVolcano setLatitude:trimmedString];
         
-    } else if ([elementPath isEqualToString:@"rss/channel/item/geo:Point/geo:long"]) {
+    } else if ([elementPath isEqualToString:@"rss/channel/item/geo:long"]) {
         [currentVolcano setLongitude:trimmedString];
         
     } else if ([elementPath isEqualToString:@"rss/channel/item/geoval:alert/geoval:alert-level/geoval:level"]) {
@@ -181,6 +182,7 @@ didStartElement:(NSString *)elementName
         
     } else if ([elementPath isEqualToString:@"rss/channel/item"]) {
         [volcanoes addObject:currentVolcano];
+        NSLog(@"%@", currentVolcano);
         [currentVolcano release]; currentVolcano = nil;
     }
     
