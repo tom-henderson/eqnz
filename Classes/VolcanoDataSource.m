@@ -182,7 +182,7 @@ didStartElement:(NSString *)elementName
         
     } else if ([elementPath isEqualToString:@"rss/channel/item"]) {
         [volcanoes addObject:currentVolcano];
-        NSLog(@"%@", currentVolcano);
+        // NSLog(@"%@", currentVolcano);
         [currentVolcano release]; currentVolcano = nil;
     }
     
