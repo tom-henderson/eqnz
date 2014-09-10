@@ -41,13 +41,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Whole of new zealand:
-	// -41.162114, 172.529297, 14.062500, 13.589921
+	// Center (-41.820455, 172.254883), Span (15.055888, 14.062499)
 
 	MKCoordinateRegion region;
-	region.center.latitude = (CLLocationDegrees) -41.162114;
-	region.center.longitude = (CLLocationDegrees) 173.529297;
-	region.span.longitudeDelta = (CLLocationDegrees) 14.062500;
-	region.span.latitudeDelta = (CLLocationDegrees) 13.589921;
+	region.center.latitude = (CLLocationDegrees) -41.820455;
+	region.center.longitude = (CLLocationDegrees) 172.254883;
+	region.span.longitudeDelta = (CLLocationDegrees) 15.055888;
+	region.span.latitudeDelta = (CLLocationDegrees) 14.062499;
 	
 	[mapView setRegion:region animated:YES];
     

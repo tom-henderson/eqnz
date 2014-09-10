@@ -40,13 +40,13 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-	//-41.162114, 172.529297, 14.062500, 13.589921
+    // Center (-35.239323, 178.408728), Span (13.329878, 12.721555)
     
 	MKCoordinateRegion region;
-	region.center.latitude = (CLLocationDegrees) -41.162114;
-	region.center.longitude = (CLLocationDegrees) 173.529297;
-	region.span.longitudeDelta = (CLLocationDegrees) 14.062500;
-	region.span.latitudeDelta = (CLLocationDegrees) 13.589921;
+	region.center.latitude = (CLLocationDegrees) -35.239323;
+	region.center.longitude = (CLLocationDegrees) 178.408728;
+	region.span.longitudeDelta = (CLLocationDegrees) 13.329878;
+	region.span.latitudeDelta = (CLLocationDegrees) 12.721555;
 	
 	[mapView setRegion:region animated:YES];
 
@@ -73,6 +73,7 @@
  return (interfaceOrientation == UIInterfaceOrientationPortrait);
  }
  */
+
 
 
 - (void)didReceiveMemoryWarning {
