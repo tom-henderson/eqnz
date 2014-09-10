@@ -32,9 +32,9 @@
 	
 	// Set up nav bar
 	[[self navigationItem] setTitle:@"Recent Earthquakes"];
-	UIBarButtonItem *reload = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:earthquakeData action:@selector(loadEarthquakeData)];
-	[[self navigationItem] setRightBarButtonItem:reload];
-	[reload release];
+    
+	UIBarButtonItem *reload = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:earthquakeData action:@selector(loadEarthquakeData)] autorelease];
+	self.navigationItem.rightBarButtonItem = reload;
 }
 
 
