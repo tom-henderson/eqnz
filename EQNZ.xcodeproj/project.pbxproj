@@ -59,12 +59,12 @@
 		E21E862213C81DD5001A8A40 /* VolcanoesMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolcanoesMapViewController.h; sourceTree = "<group>"; };
 		E21E862313C81DD5001A8A40 /* VolcanoesMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolcanoesMapViewController.m; sourceTree = "<group>"; };
 		E226F13317EEC31C00226FA0 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		E260000F12580C0A008B2A9B /* EQDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EQDataSource.h; path = ../EQDataSource.h; sourceTree = "<group>"; };
-		E260001012580C0A008B2A9B /* EQDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EQDataSource.m; path = ../EQDataSource.m; sourceTree = "<group>"; };
-		E260002212580C8A008B2A9B /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Earthquake.h; path = ../Earthquake.h; sourceTree = "<group>"; };
-		E260002312580C8A008B2A9B /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Earthquake.m; path = ../Earthquake.m; sourceTree = "<group>"; };
-		E26000E912582321008B2A9B /* EarthquakesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EarthquakesTableViewController.h; path = ../EarthquakesTableViewController.h; sourceTree = "<group>"; };
-		E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EarthquakesTableViewController.m; path = ../EarthquakesTableViewController.m; sourceTree = "<group>"; };
+		E260000F12580C0A008B2A9B /* EQDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EQDataSource.h; sourceTree = "<group>"; };
+		E260001012580C0A008B2A9B /* EQDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EQDataSource.m; sourceTree = "<group>"; };
+		E260002212580C8A008B2A9B /* Earthquake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Earthquake.h; sourceTree = "<group>"; };
+		E260002312580C8A008B2A9B /* Earthquake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Earthquake.m; sourceTree = "<group>"; };
+		E26000E912582321008B2A9B /* EarthquakesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakesTableViewController.h; sourceTree = "<group>"; };
+		E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakesTableViewController.m; sourceTree = "<group>"; };
 		E29E488D12EC45E6003F72C9 /* 77-ekg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "77-ekg@2x.png"; path = "Icons/77-ekg@2x.png"; sourceTree = SOURCE_ROOT; };
 		E29E488E12EC45E6003F72C9 /* 103-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map@2x.png"; path = "Icons/103-map@2x.png"; sourceTree = "<group>"; };
 		E2C8F3F519B825B900560F8E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Icons/icon.png; sourceTree = "<group>"; };
