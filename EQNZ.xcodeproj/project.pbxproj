@@ -28,6 +28,7 @@
 		E260002412580C8A008B2A9B /* Earthquake.m in Sources */ = {isa = PBXBuildFile; fileRef = E260002312580C8A008B2A9B /* Earthquake.m */; };
 		E26000EB12582321008B2A9B /* EarthquakesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */; };
 		E29E488F12EC45E6003F72C9 /* 77-ekg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E29E488D12EC45E6003F72C9 /* 77-ekg@2x.png */; };
+		E2BECE3219BFFC6400819395 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2BECE3119BFFC6400819395 /* InfoView.xib */; };
 		E2C8F3F619B825B900560F8E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E2C8F3F519B825B900560F8E /* icon.png */; };
 		E2CE10311260386B0055C508 /* EarthquakeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E2CE10301260386B0055C508 /* EarthquakeDetailViewController.m */; };
 		E2E32EF715930FF10046BABA /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E2E32EF615930FF10046BABA /* icon@2x.png */; };
@@ -67,6 +68,7 @@
 		E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakesTableViewController.m; sourceTree = "<group>"; };
 		E29E488D12EC45E6003F72C9 /* 77-ekg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "77-ekg@2x.png"; path = "Icons/77-ekg@2x.png"; sourceTree = SOURCE_ROOT; };
 		E29E488E12EC45E6003F72C9 /* 103-map@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "103-map@2x.png"; path = "Icons/103-map@2x.png"; sourceTree = "<group>"; };
+		E2BECE3119BFFC6400819395 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoView.xib; path = Classes/InfoView.xib; sourceTree = "<group>"; };
 		E2C8F3F519B825B900560F8E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Icons/icon.png; sourceTree = "<group>"; };
 		E2CE102F1260386B0055C508 /* EarthquakeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EarthquakeDetailViewController.h; sourceTree = "<group>"; };
 		E2CE10301260386B0055C508 /* EarthquakeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EarthquakeDetailViewController.m; sourceTree = "<group>"; };
@@ -91,12 +93,11 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				E21E862113C81D9B001A8A40 /* Volcanoes Map View */,
-				E21E861913C7F969001A8A40 /* Earthquake Data Table Views */,
-				E21E861A13C7F97A001A8A40 /* Earthquake Map View */,
+				E21E861813C7F955001A8A40 /* Data Sources */,
+				E21E861913C7F969001A8A40 /* Earthquake Data Table View */,
+				E21E862113C81D9B001A8A40 /* Map Views */,
 				1D3623240D0F684500981E51 /* EQNZAppDelegate.h */,
 				1D3623250D0F684500981E51 /* EQNZAppDelegate.m */,
-				E21E861813C7F955001A8A40 /* Data Sources */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -137,8 +138,9 @@
 				E226F13317EEC31C00226FA0 /* Default-568h@2x.png */,
 				E2C8F3F419B8253000560F8E /* App Icons */,
 				E21E861713C7F8CD001A8A40 /* Tab Bar Icons */,
-				E21C837C12589DA600B87D78 /* MapViewController.xib */,
 				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				E21C837C12589DA600B87D78 /* MapViewController.xib */,
+				E2BECE3119BFFC6400819395 /* InfoView.xib */,
 				8D1107310486CEB800E47090 /* EQNZ-Info.plist */,
 			);
 			name = Resources;
@@ -182,7 +184,7 @@
 			name = "Data Sources";
 			sourceTree = "<group>";
 		};
-		E21E861913C7F969001A8A40 /* Earthquake Data Table Views */ = {
+		E21E861913C7F969001A8A40 /* Earthquake Data Table View */ = {
 			isa = PBXGroup;
 			children = (
 				E2CE102F1260386B0055C508 /* EarthquakeDetailViewController.h */,
@@ -190,25 +192,18 @@
 				E26000E912582321008B2A9B /* EarthquakesTableViewController.h */,
 				E26000EA12582321008B2A9B /* EarthquakesTableViewController.m */,
 			);
-			name = "Earthquake Data Table Views";
+			name = "Earthquake Data Table View";
 			sourceTree = "<group>";
 		};
-		E21E861A13C7F97A001A8A40 /* Earthquake Map View */ = {
-			isa = PBXGroup;
-			children = (
-				E21C837A12589DA600B87D78 /* EarthquakesMapViewController.h */,
-				E21C837B12589DA600B87D78 /* EarthquakesMapViewController.m */,
-			);
-			name = "Earthquake Map View";
-			sourceTree = "<group>";
-		};
-		E21E862113C81D9B001A8A40 /* Volcanoes Map View */ = {
+		E21E862113C81D9B001A8A40 /* Map Views */ = {
 			isa = PBXGroup;
 			children = (
 				E21E862213C81DD5001A8A40 /* VolcanoesMapViewController.h */,
 				E21E862313C81DD5001A8A40 /* VolcanoesMapViewController.m */,
+				E21C837A12589DA600B87D78 /* EarthquakesMapViewController.h */,
+				E21C837B12589DA600B87D78 /* EarthquakesMapViewController.m */,
 			);
-			name = "Volcanoes Map View";
+			name = "Map Views";
 			sourceTree = "<group>";
 		};
 		E2C8F3F419B8253000560F8E /* App Icons */ = {
@@ -286,6 +281,7 @@
 				E21E861513C7F8BF001A8A40 /* 73-radar.png in Resources */,
 				E21E861613C7F8BF001A8A40 /* 73-radar@2x.png in Resources */,
 				E226F13417EEC31C00226FA0 /* Default-568h@2x.png in Resources */,
+				E2BECE3219BFFC6400819395 /* InfoView.xib in Resources */,
 				E2E32EF715930FF10046BABA /* icon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
