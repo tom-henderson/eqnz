@@ -19,7 +19,7 @@
 	
 	// Set up the tab bar item:
 	UITabBarItem *tbi = [self tabBarItem];
-	[tbi setTitle:@"Earthquake Map"];
+	[tbi setTitle:@"Earthquakes"];
 	UIImage *i = [UIImage imageNamed:@"103-map.png"];
 	[tbi setImage:i];
 	
