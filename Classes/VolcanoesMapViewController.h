@@ -11,7 +11,7 @@
 
 @class VolcanoDataSource;
 
-@interface VolcanoesMapViewController : UIViewController <MKMapViewDelegate> {
+@interface VolcanoesMapViewController : UIViewController {
 	IBOutlet MKMapView *mapView;
 	VolcanoDataSource *volcanoData;
 }
