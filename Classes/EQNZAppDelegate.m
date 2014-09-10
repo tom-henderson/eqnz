@@ -29,18 +29,16 @@
 	// Set up tab bar:
 	UIImage *i = [UIImage imageNamed:@"77-ekg.png"];
 	[[nav tabBarItem] setImage:i];
-	[[nav tabBarItem] setTitle:@"Recent Earthquakes"];
+	[[nav tabBarItem] setTitle:@"Recent"];
 	
 	// EarthquakesMapViewController
-	EarthquakesMapViewController *mv = [[EarthquakesMapViewController alloc] init];
+	EarthquakesMapViewController *mv = [[[EarthquakesMapViewController alloc] init] autorelease];
     
     // VolcanoesMapViewController
-    VolcanoesMapViewController *vmvc = [[VolcanoesMapViewController alloc] init];
-	
+    VolcanoesMapViewController *vmvc = [[[VolcanoesMapViewController alloc] init] autorelease];
+	    
 	UITabBarController *tbc = [[UITabBarController alloc] init];
 	NSArray *viewControllers = [NSArray arrayWithObjects:nav, mv, vmvc, nil];
-	[nav release];
-	[mv release];
 	[tbc setViewControllers:viewControllers];
 	
 	[window addSubview:[tbc view]];
