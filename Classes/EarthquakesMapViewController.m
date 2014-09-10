@@ -50,11 +50,9 @@
 	region.span.latitudeDelta = (CLLocationDegrees) 13.589921;
 	
 	[mapView setRegion:region animated:YES];
-	
+    
 	//NSLog(@"Setting map view");
 	[earthquakeData setMapView:mapView];
-    //[[earthquakeData mapView] setDelegate:earthquakeData];
-    
     [mapView setDelegate:earthquakeData];
 	
 	[self loadAnnotations];
