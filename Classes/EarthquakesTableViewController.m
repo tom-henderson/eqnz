@@ -32,6 +32,7 @@
 	
 	// Set up nav bar
 	[[self navigationItem] setTitle:@"Recent Earthquakes"];
+    self.tableView.tableFooterView = [[[NSBundle mainBundle] loadNibNamed:@"InfoView" owner:self options:nil] firstObject];
     
 	UIBarButtonItem *reload = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemRefresh target:earthquakeData action:@selector(loadEarthquakeData)] autorelease];
 	self.navigationItem.rightBarButtonItem = reload;
@@ -59,6 +60,17 @@
 	[self.navigationController pushViewController:detailViewController animated:YES];
 	[detailViewController release];
 }
+
+/*
+- (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section {
+    if (section == earthquakeData.earthquakes.count -1) {
+        UIView *footer = [[[NSBundle mainBundle] loadNibNamed:@"InfoView" owner:self options:nil] firstObject];
+        return footer;
+    } else {
+        return nil;
+    }
+}
+ */
 
 #pragma mark -
 #pragma mark Memory management
