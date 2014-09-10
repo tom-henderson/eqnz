@@ -220,4 +220,11 @@ didStartElement:(NSString *)elementName
     return nil;
 }
 
+/*
+- (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
+{
+    NSLog(@"Center (%f, %f), Span (%f, %f)", mapView.region.center.latitude, mapView.region.center.longitude, mapView.region.span.latitudeDelta, mapView.region.span.longitudeDelta);
+}
+*/
+
 @end
