@@ -11,7 +11,7 @@
 
 @class EQDataSource;
 
-@interface EarthquakesMapViewController : UIViewController <MKMapViewDelegate> {
+@interface EarthquakesMapViewController : UIViewController {
 	IBOutlet MKMapView *mapView;
 	EQDataSource *earthquakeData;
 }
