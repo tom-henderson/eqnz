@@ -22,10 +22,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // EarthquakesTableViewController
-	EarthquakesTableViewController *tv = [[EarthquakesTableViewController alloc] init];
-	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tv];	
-	[tv release];
-	
+	EarthquakesTableViewController *tv = [[[EarthquakesTableViewController alloc] init] autorelease];
+	UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:tv];
+    nav.navigationBar.translucent = YES;
+
 	// Set up tab bar:
 	UIImage *i = [UIImage imageNamed:@"77-ekg.png"];
 	[[nav tabBarItem] setImage:i];
