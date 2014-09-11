@@ -40,7 +40,7 @@
 	UITabBarController *tbc = [[UITabBarController alloc] init];
 	[tbc setViewControllers:@[nav, mv, vmvc]];
 	
-	[window addSubview:[tbc view]];
+    window.rootViewController = tbc;
 	
     [window makeKeyAndVisible];
     
