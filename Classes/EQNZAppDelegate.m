@@ -38,8 +38,7 @@
     VolcanoesMapViewController *vmvc = [[[VolcanoesMapViewController alloc] init] autorelease];
 	    
 	UITabBarController *tbc = [[UITabBarController alloc] init];
-	NSArray *viewControllers = [NSArray arrayWithObjects:nav, mv, vmvc, nil];
-	[tbc setViewControllers:viewControllers];
+	[tbc setViewControllers:@[nav, mv, vmvc]];
 	
 	[window addSubview:[tbc view]];
 	
