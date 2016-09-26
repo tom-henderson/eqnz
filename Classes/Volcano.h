@@ -19,7 +19,7 @@
 @property (nonatomic, copy) NSString *alertDescription;
 
 @property (nonatomic, readonly, copy) NSString *subtitle;
-@property (nonatomic, readonly) NSString *description;
+@property (readonly, copy) NSString *description;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
 
